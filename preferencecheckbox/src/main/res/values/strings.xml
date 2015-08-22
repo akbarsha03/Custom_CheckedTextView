@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">preferenceCheckBox</string>
+    <string name="str_title_text">This is a title text</string>
+    <string name="str_sub_title_text">This is a sbu title text which will give the description about the title</string>
+</resources>

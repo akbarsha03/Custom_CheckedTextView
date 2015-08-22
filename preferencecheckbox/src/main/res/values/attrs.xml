@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomCheckedTextView">
+        <attr name="pTitleText" format="string" localization="suggested" />
+        <attr name="pTitleTextColor" format="color" />
+        <attr name="pSubTitleText" format="string" localization="suggested" />
+        <attr name="pSubTitleTextColor" format="color" />
+        <attr name="pCheckedState" format="boolean" />
+        <attr name="pDividerColor" format="color" />
+        <attr name="pDividerVisibility" format="boolean" />
+    </declare-styleable>
+
+</resources> 

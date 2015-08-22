@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <in.shaapps.librariez.CustomCheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pSubTitleText="Sub Title text"
+        app:pTitleText="Title text" />
+
+    <in.shaapps.librariez.CustomCheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pCheckedState="true"
+        app:pSubTitleText="Another Sub Title text"
+        app:pTitleText="Title text with checked state" />
+
+    <in.shaapps.librariez.CustomCheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pDividerVisibility="true"
+        app:pSubTitleText="Third Sub Title text with color"
+        app:pSubTitleTextColor="#FF00FF"
+        app:pTitleText="Third Title text" />
+
+    <in.shaapps.librariez.CustomCheckedTextView
+        android:id="@+id/customCheckedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

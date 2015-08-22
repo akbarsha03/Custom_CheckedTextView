@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PrimaryTextStyle">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="SecondaryTextStyle">
+        <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="HorizontalLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:background">@color/dividerColor</item>
+    </style>
+</resources>
