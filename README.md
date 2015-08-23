@@ -3,6 +3,7 @@
 ###Preference CheckBox
 
 ![custom checked text view](https://raw.githubusercontent.com/akbarsha03/Custom_CheckedTextView/master/app/src/main/res/drawable/screenshot.png?raw=true "Screen shot")
+
 This is an alternative for android default **CheckedTextView** widget
 
 Grab this library using following gradle dependency
@@ -43,20 +44,21 @@ or If you want to use it from **Activity** use the following method
             customCheckedTextView.setCheckBoxCheckedState(true);
             customCheckedTextView.setDividerVisibility(false);
 
-List of available tags:
+###List of available tags:
 
- - pTitleText - Title Text (String)
- - pTitleTextColor - Title text color (String e.g #FF00FF)
- - pSubTitleText - Sub title text (String)
- - pSubTitleTextColor - Sub title text color (String e.g #00FF00)
- - pCheckedState - Checkbox checked state (boolean true or false)
- - pDividerColor - Divider color (String e.g #F0F0FF)
- - pDividerVisibility - Devider visibility (boolean true or false)
- - pTitleTextTypeface - coming soon
- - pSubTitleTextTypeface - coming soon
+ - **pTitleText** - Title Text (String)
+ - **pTitleTextColor** - Title text color (String e.g #FF00FF)
+ - **pSubTitleText** - Sub title text (String)
+ - **pSubTitleTextColor** - Sub title text color (String e.g #00FF00)
+ - **pCheckedState** - Checkbox checked state (boolean true or false)
+ - **pDividerColor** - Divider color (String e.g #F0F0FF)
+ - **pDividerVisibility** - Devider visibility (boolean true or false)
+ - **pTitleTextTypeface** - coming soon
+ - **pSubTitleTextTypeface** - coming soon
 
 ----------
 contact: akbar.sha03@gmail.com
+
 twitter: aksha03
 
 Fork and Contribute :)
