@@ -2,5 +2,5 @@
 <resources>
     <color name="primaryTextColor">#212121</color>
     <color name="secondaryTextColor">#727272</color>
-    <color name="dividerColor">#727272</color>
+    <color name="dividerColor">#D2D2D2</color>
 </resources>
