@@ -57,8 +57,31 @@ or If you want to use it from **Activity** use the following method
  - **pSubTitleTextTypeface** - coming soon
 
 ----------
-contact: akbar.sha03@gmail.com
+Contact
+============
+In case if you find a bug, requesting a new feature or error implementing this library feel free to contact me
+
+Email: akbar.sha03@gmail.com
 
 twitter: aksha03
 
-Fork and Contribute :)
+http://shaapps.in/
+
+License
+============
+
+    Copyright 2014 akbarsha03
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
+
+
