@@ -2,7 +2,7 @@
 ####or
 ###Preference CheckBox
 
-![custom checked text view](https://www.dropbox.com/s/1o0ajpfpcbbkifu/device-2015-08-23-184751.png)
+![custom checked text view](https://raw.githubusercontent.com/akbarsha03/Custom_CheckedTextView/master/app/src/main/res/drawable/screenshot.png?raw=true "Screen shot")
 This is an alternative for android default **CheckedTextView** widget
 
 Grab this library using following gradle dependency
