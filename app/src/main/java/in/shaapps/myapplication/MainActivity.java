@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import in.shaapps.librariez.CustomCheckedTextView;
+import in.shaapps.preferencecheckbox.CustomCheckedTextView;
 
 public class MainActivity extends AppCompatActivity {
 

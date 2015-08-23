@@ -1,4 +1,4 @@
-package in.shaapps.librariez;
+package in.shaapps.preferencecheckbox;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -14,8 +14,6 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import in.shaapps.preferencecheckbox.R;
 
 /**
  * Preference Check Box

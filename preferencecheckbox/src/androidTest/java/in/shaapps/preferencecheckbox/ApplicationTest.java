@@ -1,4 +1,4 @@
-package in.shaapps.librariez;
+package in.shaapps.preferencecheckbox;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
