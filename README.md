@@ -6,13 +6,19 @@
 
 This is an alternative for android default **CheckedTextView** widget
 
-Grab this library using following gradle dependency
+Grab this library using following **Gradle** **dependency**
+
+```groovy
 
     compile 'in.shaapps.librariez:preferencecheckbox:0.1-beta'
+
+```
 
 #####**or**
 
 for **Maven** additionally add this url to the Main Project's **buid.gradle**
+
+```groovy
 
     allprojects {
         repositories {
@@ -22,10 +28,14 @@ for **Maven** additionally add this url to the Main Project's **buid.gradle**
             }
         }
     }
+    
+```
 
 ###Setup
 
 To use this **CustomCheckedTextview** from **.xml** add the following tags
+
+```xml
 
     <in.shaapps.preferencecheckbox.CustomCheckedTextView
             android:layout_width="match_parent"
@@ -34,15 +44,21 @@ To use this **CustomCheckedTextview** from **.xml** add the following tags
             app:pSubTitleText="Third Sub Title text with color"
             app:pSubTitleTextColor="#FF00FF"
             app:pTitleText="Third Title text" />
+            
+```
 
 Do not forget to add namespace *xmlns:app="http://schemas.android.com/apk/res-auto"*
 or If you want to use it from **Activity** use the following method
+
+```java
 
     CustomCheckedTextView customCheckedTextView = (CustomCheckedTextView) findViewById(R.id.customCheckedTextView);
             customCheckedTextView.setTitleText("Title from coding");
             customCheckedTextView.setSubTitleText("Sub title from coding");
             customCheckedTextView.setCheckBoxCheckedState(true);
             customCheckedTextView.setDividerVisibility(false);
+            
+```
 
 ###List of available tags:
 
