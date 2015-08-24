@@ -2,6 +2,8 @@
 ####or
 ###Preference CheckBox
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Custom%20Checked%20TextView-green.svg?style=flat)](https://android-arsenal.com/details/1/2376)
+
 ![custom checked text view](https://raw.githubusercontent.com/akbarsha03/Custom_CheckedTextView/master/app/src/main/res/drawable/screenshot.png?raw=true "Screen shot")
 
 This is an alternative for android default **CheckedTextView** widget
@@ -82,6 +84,8 @@ Email: akbar.sha03@gmail.com
 twitter: aksha03
 
 http://shaapps.in/
+
+Thank you Android Arsenal
 
 License
 ============
