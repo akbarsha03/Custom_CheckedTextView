@@ -81,7 +81,7 @@ In case if you find a bug, requesting a new feature or error implementing this l
 
 Email: akbar.sha03@gmail.com
 
-twitter: aksha03
+twitter: akbarsha03
 
 http://shaapps.in/
 
