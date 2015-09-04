@@ -8,6 +8,9 @@
         <attr name="pCheckedState" format="boolean" />
         <attr name="pDividerColor" format="color" />
         <attr name="pDividerVisibility" format="boolean" />
+        <attr name="pTitleTextFont" format="string" />
+        <attr name="pSubTitleTextFont" format="string" />
+        <attr name="pSetFlexibleHeight" format="boolean" />
     </declare-styleable>
 
 </resources> 

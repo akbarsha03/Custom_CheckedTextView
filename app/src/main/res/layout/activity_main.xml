@@ -28,13 +28,14 @@
         android:layout_height="wrap_content"
         app:pDividerVisibility="true"
         app:pSubTitleText="Third Sub Title text with color"
-        app:pSubTitleTextColor="#FF00FF"
+        app:pSubTitleTextColor="@color/secondaryTextColor"
         app:pTitleText="Third Title text" />
 
     <in.shaapps.preferencecheckbox.CustomCheckedTextView
         android:id="@+id/customCheckedTextView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:pSetFlexibleHeight="true" />
 
     <in.shaapps.preferencecheckbox.CustomCheckedTextView
         android:layout_width="match_parent"
@@ -44,7 +45,9 @@
         app:pDividerVisibility="true"
         app:pSubTitleText="Sub title text"
         app:pSubTitleTextColor="#00FF00"
-        app:pTitleText="Sample text A"
-        app:pTitleTextColor="#FF00FF" />
+        app:pSubTitleTextFont="fonts/TravelingTypewriter.ttf"
+        app:pTitleText="Title text color"
+        app:pTitleTextColor="#ff174d"
+        app:pTitleTextFont="fonts/TravelingTypewriter.ttf" />
 
 </LinearLayout>

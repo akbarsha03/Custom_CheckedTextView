@@ -15,10 +15,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         CustomCheckedTextView customCheckedTextView = (CustomCheckedTextView) findViewById(R.id.customCheckedTextView);
-        customCheckedTextView.setTitleText("Title from coding");
-        customCheckedTextView.setSubTitleText("Sub title from coding");
+        customCheckedTextView.setTitleText("Title typeface from coding");
+        customCheckedTextView.setSubTitleText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua");
         customCheckedTextView.setCheckBoxCheckedState(true);
         customCheckedTextView.setDividerVisibility(false);
+        customCheckedTextView.setTitleTextTypeface("fonts/TravelingTypewriter.ttf");
+        customCheckedTextView.setSubTitleTextTypeface("fonts/TravelingTypewriter.ttf");
 
     }
 

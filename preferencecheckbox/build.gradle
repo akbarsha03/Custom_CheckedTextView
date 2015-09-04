@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-
 ext {
     bintrayRepo = 'maven'
     bintrayName = 'PreferenceCheckBox'
@@ -23,7 +22,6 @@ ext {
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
 }
-
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.0"
@@ -41,6 +39,5 @@ android {
         }
     }
 }
-
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
 apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
