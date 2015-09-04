@@ -4,7 +4,7 @@
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Custom%20Checked%20TextView-green.svg?style=flat)](https://android-arsenal.com/details/1/2376)
 
-![custom checked text view](https://raw.githubusercontent.com/akbarsha03/Custom_CheckedTextView/master/app/src/main/res/drawable/screenshot.png?raw=true "Screen shot")
+![custom checked text view](https://raw.githubusercontent.com/akbarsha03/Custom_CheckedTextView/master/app/src/main/res/drawable/screenshot2.png?raw=true "Screen shot")
 
 This is an alternative for android default **CheckedTextView** widget
 
@@ -12,7 +12,7 @@ Grab this library using following **Gradle** **dependency**
 
 ```groovy
 
-    compile 'in.shaapps.librariez:preferencecheckbox:0.1-beta'
+    compile 'in.shaapps.librariez:preferencecheckbox:0.2-beta'
 
 ```
 
@@ -45,6 +45,7 @@ To use this **CustomCheckedTextview** from **.xml** add the following tags
             app:pDividerVisibility="true"
             app:pSubTitleText="Third Sub Title text with color"
             app:pSubTitleTextColor="#FF00FF"
+            app:pSetFlexibleHeight="false"
             app:pTitleText="Third Title text" />
             
 ```
@@ -70,9 +71,10 @@ or If you want to use it from **Activity** use the following method
  - **pSubTitleTextColor** - Sub title text color (String e.g #00FF00)
  - **pCheckedState** - Checkbox checked state (boolean true or false)
  - **pDividerColor** - Divider color (String e.g #F0F0FF)
- - **pDividerVisibility** - Devider visibility (boolean true or false)
- - **pTitleTextTypeface** - coming soon
- - **pSubTitleTextTypeface** - coming soon
+ - **pDividerVisibility** - Divider visibility (boolean true or false)
+ - **pTitleTextTypeface** - Title text typeface (e.g "font/fontname.ttf")
+ - **pSubTitleTextTypeface** - Sub title text typeface (e.g "font/fontname.ttf")
+ - **pRippleEffect** - Coming soon
 
 ----------
 Contact
@@ -81,7 +83,7 @@ In case if you find a bug, requesting a new feature or error implementing this l
 
 Email: akbar.sha03@gmail.com
 
-twitter: akbarsha03
+twitter: @akbarsha03
 
 http://shaapps.in/
 
@@ -90,7 +92,7 @@ Thank you Android Arsenal
 License
 ============
 
-    Copyright 2015 akbarsha03
+    Copyright 2015 Akbar Sha Ebrahim
 
 	Licensed under the Apache License, Version 2.0 (the "License");
 	you may not use this file except in compliance with the License.

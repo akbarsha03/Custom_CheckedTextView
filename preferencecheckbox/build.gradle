@@ -12,7 +12,7 @@ ext {
     siteUrl = 'https://github.com/akbarsha03/Custom_CheckedTextView'
     gitUrl = 'https://github.com/akbarsha03/Custom_CheckedTextView.git'
 
-    libraryVersion = '0.1-beta'
+    libraryVersion = '0.2-beta'
 
     developerId = 'akbarsha03'
     developerName = 'Akbar Sha Ebrahim'
