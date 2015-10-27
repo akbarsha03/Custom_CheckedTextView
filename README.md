@@ -45,7 +45,7 @@ To use this **CustomCheckedTextview** from **.xml** add the following tags
             app:pDividerVisibility="true"
             app:pSubTitleText="Third Sub Title text with color"
             app:pSubTitleTextColor="#FF00FF"
-            app:pSetFlexibleHeight="false"
+            app:pSetFixedHeight="false"
             app:pTitleText="Third Title text" />
             
 ```
@@ -74,16 +74,19 @@ or If you want to use it from **Activity** use the following method
  - **pDividerVisibility** - Divider visibility (boolean true or false)
  - **pTitleTextTypeface** - Title text typeface (e.g "font/fontname.ttf")
  - **pSubTitleTextTypeface** - Sub title text typeface (e.g "font/fontname.ttf")
- - **pSetFlexibleHeight** - Set flexible Height or Height Wrap Content (e.g boolean true to wrap and false to set fixed height)
+ - **pSetFixedHeight** - Set Fixed Height or Height Wrap Content (e.g boolean true to wrap and false to set fixed height)
  - **pRippleEffect** - Coming soon
 
-###Flexible Height or Height Wrap Content (**pSetFlexibleHeight**)
+###Fixed Height or Height Wrap Content (**pSetFixedHeight**)
 
 ```xml
 
-    app:pSetFlexibleHeight="true"
+    app:pSetFixedHeight="true"
 
 ```
+
+Please change the above attribute name from **pSetFlexibleHeight** to **pSetFixedHeight** if you're updating from older version to 0.3-beta
+
 
 use this attribute and set to true when you don't want margin and fixed height when you have really large content for your custom checked text view
 
