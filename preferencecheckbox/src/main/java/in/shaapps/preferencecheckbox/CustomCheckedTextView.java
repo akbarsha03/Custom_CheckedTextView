@@ -65,7 +65,7 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
                 true);
         String titleFont = typedArray.getString(R.styleable.CustomCheckedTextView_pTitleTextFont);
         String subTitleFont = typedArray.getString(R.styleable.CustomCheckedTextView_pSubTitleTextFont);
-        isFlexibleHeight = typedArray.getBoolean(R.styleable.CustomCheckedTextView_pSetFlexibleHeight,
+        isFlexibleHeight = typedArray.getBoolean(R.styleable.CustomCheckedTextView_pSetFixedHeight,
                 false);
         typedArray.recycle();
 
@@ -244,5 +244,9 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
 
     public void setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener onCheckedChangeListener) {
         checkBox.setOnCheckedChangeListener(onCheckedChangeListener);
+    }
+
+    public void setOnClickListener(OnClickListener onClickListener) {
+        checkBox.setOnClickListener(onClickListener);
     }
 }

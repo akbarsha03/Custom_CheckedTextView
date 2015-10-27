@@ -35,7 +35,7 @@
         android:id="@+id/customCheckedTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:pSetFlexibleHeight="true" />
+        app:pSetFixedHeight="true" />
 
     <in.shaapps.preferencecheckbox.CustomCheckedTextView
         android:layout_width="match_parent"

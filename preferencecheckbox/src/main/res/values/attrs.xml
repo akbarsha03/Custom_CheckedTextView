@@ -10,7 +10,7 @@
         <attr name="pDividerVisibility" format="boolean" />
         <attr name="pTitleTextFont" format="string" />
         <attr name="pSubTitleTextFont" format="string" />
-        <attr name="pSetFlexibleHeight" format="boolean" />
+        <attr name="pSetFixedHeight" format="boolean" />
     </declare-styleable>
 
 </resources> 
