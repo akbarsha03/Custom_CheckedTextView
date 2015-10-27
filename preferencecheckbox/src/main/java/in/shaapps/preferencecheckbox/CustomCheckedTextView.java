@@ -210,7 +210,7 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
         return this.subTitleText;
     }
 
-    public void setCheckBoxCheckedState(boolean pCheckedState) {
+    public void setChecked(boolean pCheckedState) {
         this.checkBox.setChecked(pCheckedState);
     }
 
@@ -218,7 +218,7 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
         this.horizontalView.setVisibility(pCheckedState ? View.VISIBLE : View.GONE);
     }
 
-    public boolean getCheckedState() {
+    public boolean getChecked() {
         return this.checkBoxCheckedState;
     }
 
@@ -240,5 +240,9 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
 
     public void setSubTitleTextTypeface(int resId) {
         setSubTitleText(getContext().getString(resId));
+    }
+
+    public void setOnCheckedChangeListener(CompoundButton.OnCheckedChangeListener onCheckedChangeListener) {
+        checkBox.setOnCheckedChangeListener(onCheckedChangeListener);
     }
 }

@@ -12,7 +12,7 @@ Grab this library using following **Gradle** **dependency**
 
 ```groovy
 
-    compile 'in.shaapps.librariez:preferencecheckbox:0.2-beta'
+    compile 'in.shaapps.librariez:preferencecheckbox:0.3-beta'
 
 ```
 
@@ -58,7 +58,7 @@ or If you want to use it from **Activity** use the following method
     CustomCheckedTextView customCheckedTextView = (CustomCheckedTextView) findViewById(R.id.customCheckedTextView);
             customCheckedTextView.setTitleText("Title from coding");
             customCheckedTextView.setSubTitleText("Sub title from coding");
-            customCheckedTextView.setCheckBoxCheckedState(true);
+            customCheckedTextView.setChecked(true);
             customCheckedTextView.setDividerVisibility(false);
             
 ```
@@ -74,7 +74,18 @@ or If you want to use it from **Activity** use the following method
  - **pDividerVisibility** - Divider visibility (boolean true or false)
  - **pTitleTextTypeface** - Title text typeface (e.g "font/fontname.ttf")
  - **pSubTitleTextTypeface** - Sub title text typeface (e.g "font/fontname.ttf")
+ - **pSetFlexibleHeight** - Set flexible Height or Height Wrap Content (e.g boolean true to wrap and false to set fixed height)
  - **pRippleEffect** - Coming soon
+
+###Flexible Height or Height Wrap Content (**pSetFlexibleHeight**)
+
+```xml
+
+    app:pSetFlexibleHeight="true"
+
+```
+
+use this attribute and set to true when you don't want margin and fixed height when you have really large content for your custom checked text view
 
 ----------
 Contact
