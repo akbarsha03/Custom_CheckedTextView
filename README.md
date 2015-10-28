@@ -12,7 +12,7 @@ Grab this library using following **Gradle** **dependency**
 
 ```groovy
 
-    compile 'in.shaapps.librariez:preferencecheckbox:0.3-beta'
+    compile 'in.shaapps.librariez:preferencecheckbox:0.4-beta'
 
 ```
 
@@ -85,10 +85,12 @@ or If you want to use it from **Activity** use the following method
 
 ```
 
-Please change the above attribute name from **pSetFlexibleHeight** to **pSetFixedHeight** if you're updating from older version to 0.3-beta
+Please change the above attribute name from **pSetFlexibleHeight** to **pSetFixedHeight** if you're updating from older version to 0.4-beta
 
 
 use this attribute and set to true when you don't want margin and fixed height when you have really large content for your custom checked text view
+
+**Please checkout the sample app**
 
 ----------
 Contact

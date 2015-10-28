@@ -24,8 +24,7 @@ import android.widget.TextView;
 @SuppressWarnings("unused")
 public class CustomCheckedTextView extends LinearLayout implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
-    private Context mContext;
-    private boolean isFlexibleHeight;
+    private LinearLayout topLayout;
     private String subTitleText;
     private String titleText;
     private boolean checkBoxCheckedState;
@@ -37,7 +36,6 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
 
     public CustomCheckedTextView(Context context) {
         super(context);
-        mContext = context;
     }
 
     public CustomCheckedTextView(Context context, AttributeSet attrs) {
@@ -65,7 +63,7 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
                 true);
         String titleFont = typedArray.getString(R.styleable.CustomCheckedTextView_pTitleTextFont);
         String subTitleFont = typedArray.getString(R.styleable.CustomCheckedTextView_pSubTitleTextFont);
-        isFlexibleHeight = typedArray.getBoolean(R.styleable.CustomCheckedTextView_pSetFixedHeight,
+        boolean isFixedHeight = typedArray.getBoolean(R.styleable.CustomCheckedTextView_pSetFixedHeight,
                 false);
         typedArray.recycle();
 
@@ -80,7 +78,7 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
          */
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(isFlexibleHeight ? R.layout.custom_checked_textview
+        inflater.inflate(isFixedHeight ? R.layout.custom_checked_textview
                 : R.layout.custom_checked_textview_list_height, this, true);
 
         /**
@@ -91,7 +89,7 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
         /**
          * Get the top layout
          */
-        LinearLayout topLayout = (LinearLayout) getChildAt(0);
+        topLayout = (LinearLayout) getChildAt(0);
 
         /**
          * Get the first Relative layout which hold the Title and Sub title texts
@@ -130,7 +128,6 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
         if (!TextUtils.isEmpty(subTitleFont)) setSubTitleTextTypeface(subTitleFont);
 
         checkBox.setChecked(checkBoxCheckedState);
-        checkBox.setOnCheckedChangeListener(this);
 
         horizontalView.setBackgroundColor(dividerColor);
         horizontalView.setVisibility(dividerCheckedState ? View.VISIBLE : View.GONE);
@@ -212,6 +209,7 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
 
     public void setChecked(boolean pCheckedState) {
         this.checkBox.setChecked(pCheckedState);
+        this.tempCheckBoxCheckedState = pCheckedState;
     }
 
     public void setDividerVisibility(boolean pCheckedState) {
@@ -247,6 +245,6 @@ public class CustomCheckedTextView extends LinearLayout implements View.OnClickL
     }
 
     public void setOnClickListener(OnClickListener onClickListener) {
-        checkBox.setOnClickListener(onClickListener);
+        topLayout.setOnClickListener(onClickListener);
     }
 }

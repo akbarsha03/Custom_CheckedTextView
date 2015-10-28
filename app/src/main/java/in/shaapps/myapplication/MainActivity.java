@@ -7,15 +7,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.CompoundButton;
 
 import in.shaapps.preferencecheckbox.CustomCheckedTextView;
 
-public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
+public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener, View.OnClickListener {
 
     private SharedPreferences.Editor editor;
     private SharedPreferences sharedpreferences;
     private CustomCheckedTextView customCheckedTextView;
+    private boolean temp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         customCheckedTextView.setTitleTextTypeface("fonts/TravelingTypewriter.ttf");
         customCheckedTextView.setSubTitleTextTypeface("fonts/TravelingTypewriter.ttf");
 
+//        customCheckedTextView.setOnClickListener(this);
+        /**
+         * Use Checked change listener
+         */
         customCheckedTextView.setOnCheckedChangeListener(this);
 
         loadPreference();
@@ -40,7 +46,8 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
     }
 
     private void loadPreference() {
-        customCheckedTextView.setChecked(sharedpreferences.getBoolean("VALUE", false));
+        temp = sharedpreferences.getBoolean("VALUE", false);
+        customCheckedTextView.setChecked(temp);
     }
 
     @Override
@@ -70,6 +77,26 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         Log.d("SHA", "Checking");
         editor = sharedpreferences.edit();
         editor.putBoolean("VALUE", isChecked);
+        editor.apply();
+    }
+
+    @Override
+    public void onClick(View v) {
+
+        Log.d("SHA", "Clicking");
+
+        editor = sharedpreferences.edit();
+
+        if (temp) {
+            editor.putBoolean("VALUE", false);
+            customCheckedTextView.setChecked(false);
+            temp = false;
+        } else {
+            editor.putBoolean("VALUE", true);
+            customCheckedTextView.setChecked(true);
+            temp = true;
+        }
+
         editor.apply();
     }
 }
